@@ -1,9 +1,14 @@
 <?php
 function StringInvertida($string)
 {
-    return strrev($string);
+    $stringInvertida = '';
+
+    for ($i = strlen($string) - 1; $i >= 0; $i--) {
+        $stringInvertida .= $string[$i];
+    }
+    return $stringInvertida;
 }
-$PrincipalString = "Meu nome nao e Andrei";
-$stringInvertida = StringInvertida($PrincipalString);
-echo "string original: " . $PrincipalString . "\n";
-echo "string invertida: " . $stringInvertida;
+
+$string = 'Ola Mundo';
+echo "string original: " . $string . "\n";
+echo "string invertida: " . stringInvertida($string);
