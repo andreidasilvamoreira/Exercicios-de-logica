@@ -1,5 +1,5 @@
 <?php
-function StringInvertida($string)
+function stringInvertida($string)
 {
     $stringInvertida = '';
 

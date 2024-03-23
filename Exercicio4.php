@@ -1,7 +1,7 @@
 <?php
 function CalcFat($fatorial)
 {
-    if ($fatorial < 0) {
+    if ($fatorial <= 0) {
 
         return "fatorial é apenas para numeros positivos";
     }
@@ -15,5 +15,6 @@ function CalcFat($fatorial)
     return $resultado;
 }
 
-$fatorial = 5;
-echo "a fatorial do numero é: " . CalcFat($fatorial);
+$fatorial = 0;
+$result = CalcFat($fatorial);
+echo is_int($result) ? "a fatorial do numero é:" . $result : $result;
