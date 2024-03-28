@@ -15,6 +15,6 @@ function CalcFat($fatorial)
     return $resultado;
 }
 
-$fatorial = 0;
+$fatorial = 8;
 $result = CalcFat($fatorial);
 echo is_int($result) ? "a fatorial do numero é:" . $result : $result;

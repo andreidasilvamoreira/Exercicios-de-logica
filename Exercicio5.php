@@ -1,5 +1,5 @@
 <?php
-echo isPalindromo("oi");
+echo isPalindromo("oio");
 
 function isPalindromo($string)
 {
