@@ -1,13 +1,10 @@
 <?php
 
-function remRepetidos($array)
+function removerElementosRepetidos($array)
 {
-
-    if ($array) {
-        $array = array_unique($array);
-    }
+    $array = array_unique($array);
     return $array;
 }
 $arrayAleatorio = [3, 5, 3, 6, 6, 7, 9];
-$arrayCorrigido = remRepetidos($arrayAleatorio);
+$arrayCorrigido = removerElementosRepetidos($arrayAleatorio);
 var_dump($arrayCorrigido);

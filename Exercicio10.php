@@ -1,9 +1,9 @@
 <?php
-function procElem($elemento, $array)
+function procurarElemento($elemento, $array)
 {
-    foreach ($array as $indice => $valor) {
-        if ($valor == $elemento) {
-            return $indice;
+    for ($i = 0; $i < count($array); $i++) {
+        if ($array[$i] == $elemento) {
+            return $i;
         }
     }
     return false;
@@ -11,7 +11,7 @@ function procElem($elemento, $array)
 
 $array = ["arroz", "batata", "feijao"];
 $elementoBuscado = "arroz";
-$indice = procElem($elementoBuscado, $array);
+$indice = procurarElemento($elementoBuscado, $array);
 
 if ($indice != false) {
     echo "O elemento $elementoBuscado foi encontrado no indice $indice.";
