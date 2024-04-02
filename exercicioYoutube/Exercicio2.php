@@ -7,12 +7,12 @@ function calcDiasMesAno($anos, $dia, $mes)
 
     return array($dias, $meses);
 }
-$anos = 10;
-$mes = 2;
+$anos = 30;
+$mes = 6;
 $dia = 5;
 
 $result = calcDiasMesAno($anos, $dia, $mes);
 $dias = $result[0];
 $meses = $result[1];
 
-echo "$anos anos são:\n$dias dias\nou\n$meses meses.";
+echo "voce ja viveu $dias dias";
